@@ -12,6 +12,8 @@ This is based on a [blog post](http://somethinginteractive.com/blog/2013/07/24/t
 
 
 ### How do I get set up? ###
+
+**Required:**
 * USB Harddrive
 * Time Machine configured to use the USB hardrive as the backup Volume.
 * Checkout this repo
@@ -28,6 +30,7 @@ sudo ls
 ```
 
 * or also before running setup_timemachine_bacups.py add the following to your /etc/sudoers file:
+
 **REPLACE:**
 ```
 %admin  ALL=(ALL) ALL
