@@ -21,7 +21,7 @@ This is based on a [blog post](http://somethinginteractive.com/blog/2013/07/24/t
 
 **NOTE:** It is important that you all ready have timemachine configured to use your USB harddrive and that you know the name of the Volume of the drive.
 
-**NOTE:** It is also important to not that the setup utility uses the sudo command, so you will want to make sure to do one of the following:
+**NOTE:** It is also important to note that the setup utility uses the sudo command, so you will want to make sure to do one of the following:
 
 * Before running setup_timemachine_bacups.py make sure to either run sudo once before so it doesn't ask you for a password
 ```
