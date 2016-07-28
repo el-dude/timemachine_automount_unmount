@@ -166,7 +166,6 @@ for conf in src_configs:
   commands.getstatusoutput("/bin/launchctl load "+full_conf_path)
 
 
-
 ###
 #   Lastly run these commands:
 #   sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.backupd-auto.plist

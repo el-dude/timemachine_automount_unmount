@@ -47,8 +47,8 @@ sudo visudo
 
 **EXAMPLE:**
 ```
-setup_timemachine_bacups.py -b <NAME OF BACKUP VOL>
-setup_timemachine_bacups.py --backup <NAME OF BACKUP VOL>
+python setup_timemachine_bacups.py -b <NAME OF BACKUP VOL>
+python setup_timemachine_bacups.py --backup <NAME OF BACKUP VOL>
 ```
 
 ### Contribution guidelines ###
