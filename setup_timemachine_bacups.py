@@ -119,6 +119,18 @@ dst_configs_sym_path  = os.path.join(home_path, 'Library/LaunchAgents/')
 old_pattern           = "%BNAME%"
 new_pattern           = opts.vol_name
 
+###
+# Make the config and script directories:
+the_directories = [
+  "configs/",
+  "scripts/"
+]
+for d in the_directories:
+  logger.info("Checking if %s exists", d)
+  if not os.path.exists(d):
+    logger.info("making directory: %s", d)
+    os.makedirs(d)
+
 #
 ### Move the scripts and configs into place:
 move_files(src_scripts_path, src_scripts, dst_scripts)

@@ -17,12 +17,29 @@ This is based on a [blog post](http://somethinginteractive.com/blog/2013/07/24/t
 * Checkout this repo
 * run the setup utility(setup_timemachine_bacups.py)
 
-**NOTE: It is important that you all ready have timemachine configured to use your USB harddrive and that you know the name of the Volume of the drive.
+**NOTE:** It is important that you all ready have timemachine configured to use your USB harddrive and that you know the name of the Volume of the drive.
+
+**NOTE:** It is also important to not that the setup utility uses the sudo command, so you will want to make sure to do one of the following:
+
+* Before running setup_timemachine_bacups.py make sure to either run sudo once before so it doesn't ask you for a password
+```
+sudo ls
 
 ```
-#!/bin/bash
 
+* or also before running setup_timemachine_bacups.py add the following to your /etc/sudoers file:
+**REPLACE:**
+```
+%admin  ALL=(ALL) ALL
+```
+**WITH:**
+```
+%admin  ALL=(ALL) NOPASSWD: ALL
+```
 
+you can do this with the following comand to open the sudoers file in an editor and do the replacement.
+```
+sudo visudo
 ```
 
 **EXAMPLE:**
